@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Desafios/D002/Favicon/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagePm flexível" >
+     </picture>
+
+    <h1>Audio no Site</h1>
+
+    <p>podemos colocar adicionar um audio  correção  </p>
+
+    <audio autoplay preload="metadata" loop controls>
+        <source src="midias/Salasakas.mp3" type="audio/mpeg">
+        <source src="midias/Salasakas.ogg" type="audio/ogg">
+        <source src="midias/Salasakas.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não esteja escutando a musica, voce pode baixar o arquivo <a href="midias/Salasakas.mp3">click aqui para baixar</a></p>
+    </audio>
+</body>
+</html>

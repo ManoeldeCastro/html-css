@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absoltas
+            Cm - centimetros
+            mm - milimetros
+            in - polegadas
+            px - pixel
+            pt - ponto
+            pc - paica
+
+            Medidas relativas
+            em - relativa ao tamanho atual da fonte
+            ex - relativa a altura x de uma fonte
+            rem - relativa ao rute
+            vw - relativa a largura da view port( largura da tela do monitor)
+            vh - relativa a altura da view port
+            
+            para fontes recomendado pela 3wschools o uso de em e px IMPORTANTE
+            
+            1em = 16px GERALMENTE
+
+            Procurar sempre usar o em, pois ele se adapta ao tamanho da tela
+            */
+            font-size: 16px;
+            /* font-weight 
+            lighter - fonte magra;
+            normal - fonte normal 
+            bold - grosso;
+            bolder - extra grosso;
+            de 100 a 900 - 100 sendo a mais fina 900 a mais grossa
+            so algumas fontes exitem essa propriedade 
+            */
+            font-weight: lighter;
+     
+            text-decoration: underline;
+            /* propriedades acima n serve para todas as fontes  */
+
+        }
+        h1 {
+            font: italic lighter 40px times;
+            /* ordem para shorthand 
+            font-style , font-weight , font-size - font-family
+            */
+            /* shorthand 
+                conceito para um propiedade que agrega outras propriedades juntas
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel corporis magnam odit vitae, esse nesciunt quisquam explicabo aliquam recusandae ipsa iusto maxime totam unde sed, optio animi reprehenderit ipsam.</p>
+    <h2>subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt delectus doloribus dolor ratione eos sapiente iusto vel reiciendis quam, provident nemo maxime eligendi asperiores incidunt iure expedita illo dignissimos quia.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Vídeo</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Estudo de Vídeo</h1>
+
+    <p>Nessa pagina vou tentar carregar um vídeo uma imagem e um musica</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./imagens/foto-m.png" type="image/png">
+        <img src="./imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <br>
+    <audio controls preload="metadata">
+        <source src="audio/Salasakas.mp3" type="audio/mpeg">
+        <source src="audio/Salasakas.ogg" type="audio/ogg">
+        <source src="audio/Salasakas.wav" type="audio/wav">
+    </audio>
+<br>
+    <video width="720" poster="imagens/capa.png" controls>
+
+        <source src="midias/avela.mp4" type="video/mp4">
+        <source src="midias/Avela.m4v" type="video/mp4">
+        <source src="midias/Avela.webm" type="video/webm">
+
+    </video>
+    
+    
+</body>
+</html>

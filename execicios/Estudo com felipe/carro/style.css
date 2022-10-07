@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+ 
+}
+main {
+    height: 80vh;
+    background-image: url(https://10websites-design-to-html-css.netlify.app/automotive-car-design/car-bg.jpg);
+    background-size: cover;
+    /* background-size: cover; - fica do tamanho da tag que ele está */
+}
+/* display flex aumenta o leque de possibilidade dentro da tag */
+.menu {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+nav {
+    align-items: center;
+    font-size: 21px;
+    display: flex;
+    gap:10px;
+ 
+}
+a{
+    color: white;
+    text-decoration: none;
+    /* text-decoration: none - retira o sublinhado */
+}
+h3 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+}
+button {
+    padding: 15px;
+    background-color: rgb(49, 99, 107);
+    color: white;
+}
+section {
+    margin-top: 200px;
+    margin-left: 20px;
+}
+h1 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    color: aqua;
+ 
+}
+h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+section button {
+    font-size: 32px;
+}
+footer {
+    height: 20vh;
+    background-color: black;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    color: white;
+}
+li strong {
+    color: aqua;
+}
+svg{
+
+    width: 40px;
+}
