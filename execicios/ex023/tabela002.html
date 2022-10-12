@@ -36,6 +36,11 @@
         th, td {
             padding: 5px;
         }
+        tbody > tr:nth-child(2n) {
+            background-color: darkgray;
+            font-weight: bold;
+        }
+
         td:hover {
             background-color: black;
             color: white;
@@ -58,6 +63,10 @@
         td#mudanca {
             color: rgb(86, 168, 4);
         }
+        tbody > tr:nth-child(2n) > td#mudanca {
+            color: rgb(4, 0, 255);
+            
+        }
         tfoot  td{
             background-color: lightgrey;
         }
@@ -71,13 +80,13 @@
         </caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População (2010)</th>
-                <th>População (2021)</th>
-                <th>Mudança (%)</th>
-                <th>% da População total</th>
-                <th>Pais Comparável <br>(Habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col">População (2021)</th>
+                <th scope="col">Mudança (%)</th>
+                <th scope="col">% da População total</th>
+                <th scope="col">Pais Comparável <br>(Habitantes)</th>
             </tr>
         </thead>
         <tbody>
@@ -328,7 +337,7 @@
         <tfoot>
 
             <tr>
-                <TH colspan="4">Total de Habitantes:</TH>
+                <TH colspan="4" scope="row">Total de Habitantes:</TH>
                 <td colspan="4"><strong>210.147.125<br>(Habitantes)</strong></td>
             </tr>
         </tfoot>
