@@ -11,6 +11,7 @@
             width: 97vw;
             border-collapse: collapse;
             height: 97vh;
+            position: relative;
         }
         caption {
             border: 3px solid black;
@@ -33,6 +34,8 @@
             background-color: aqua;
             color: darkblue;
         }
+    
+        
         th, td {
             padding: 5px;
         }
@@ -67,6 +70,13 @@
             color: rgb(4, 0, 255);
             
         }
+        thead > tr > th {
+            position: sticky;
+            top: 0%;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
         tfoot  td{
             background-color: lightgrey;
         }
