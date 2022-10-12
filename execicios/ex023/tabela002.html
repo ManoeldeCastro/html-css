@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste tabela</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 97vw;
+            border-collapse: collapse;
+            height: 97vh;
+        }
+        caption {
+            border: 3px solid black;
+            border-bottom: -3px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        th {
+            border: 2px solid rgb(0, 0, 0);
+            background-color: aqua;
+            
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;   
+            
+        }
+        thead {
+            background-color: aqua;
+            color: darkblue;
+        }
+        th, td {
+            padding: 5px;
+        }
+        td:hover {
+            background-color: black;
+            color: white;
+            transition: 1s;
+        }
+        td#estado {
+            text-align: left;
+        }
+        td#posicao{
+            
+            text-align: center;
+        }
+        td#posicao::after{
+            content: '°';
+        }
+       
+        td#atual {
+            text-align: right;
+        }
+        td#mudanca {
+            color: rgb(86, 168, 4);
+        }
+        tfoot  td{
+            background-color: lightgrey;
+        }
+        </style>
+</head>
+<body>
+
+    <table>
+        <caption>
+            <h1>Tabela de População do Brasil</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade Federativa</th>
+                <th>População (2010)</th>
+                <th>População (2021)</th>
+                <th>Mudança (%)</th>
+                <th>% da População total</th>
+                <th>Pais Comparável <br>(Habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="posicao">1</td>
+                <td id="estado">São Paulo</td>
+                <td id="populacao">41 262 199</td>
+                <td id="atual">46 649 132</td>
+                <td id="mudanca">+13.05%</td>
+                <td id="%atual">21,9%</td>
+                <td id="pais">Espanha (46 439 864)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">2</td>
+                <td id="estado">Minas Gerais</td>
+                <td id="populacao">19 597 330</td>
+                <td id="atual">21 411 923</td>
+                <td id="mudanca">+9.26%</td>
+                <td id="%atual">10,1%</td>
+                <td id="pais">Sri Lanka (20 675 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">3</td>
+                <td id="estado">Rio de Janeiro</td>
+                <td id="populacao">15 989 929</td>
+                <td id="atual">17 463 349</td>
+                <td id="mudanca">+9.21%</td>
+                <td id="%atual">8,2%</td>
+                <td id="pais"> Síria (17 500 658)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">4</td>
+                <td id="estado">Bahia</td>
+                <td id="populacao">14 016 906</td>
+                <td id="atual">14 985 284</td>
+                <td id="mudanca">+6.91%</td>
+                <td id="%atual">7,1%</td>
+                <td id="pais">Chade (14 037 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">5</td>
+                <td id="estado">Paraná</td>
+                <td id="populacao">10 444 526</td>
+                <td id="atual">11 597 484</td>
+                <td id="mudanca">+11.04%</td>
+                <td id="%atual">5,4%</td>
+                <td id="pais">Bolívia (11 410 651)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">6</td>
+                <td id="estado">Rio Grande do Sul</td>
+                <td id="populacao">10 693 929</td>
+                <td id="atual">11 466 630</td>
+                <td id="mudanca">+7.23%</td>
+                <td id="%atual">5,4%</td>
+                <td id="pais">Bélgica (11 250 659)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">7</td>
+                <td id="estado">Pernambuco</td>
+                <td id="populacao">8 796 448</td>
+                <td id="atual">9 674 793</td>
+                <td id="mudanca">+9.98%</td>
+                <td id="%atual">4,5%</td>
+                <td id="pais">Bielorrússia (9 485 300)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">8</td>
+                <td id="estado">Ceará</td>
+                <td id="populacao">8 452 381</td>
+                <td id="atual">9 240 580</td>
+                <td id="mudanca">+9.32%</td>
+                <td id="%atual">4,3%</td>
+                <td id="pais">Emirados Árabes Unidos (9 157 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">9</td>
+                <td id="estado">Pará</td>
+                <td id="populacao">7 581 051</td>
+                <td id="atual">8 777 124</td>
+                <td id="mudanca">+15.78%</td>
+                <td id="%atual">4,1%</td>
+                <td id="pais">Áustria (8 602 112)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">10</td>
+                <td id="estado">Santa Catarina</td>
+                <td id="populacao">6 248 436</td>
+                <td id="atual">7 338 473</td>
+                <td id="mudanca">+17.44%</td>
+                <td id="%atual">3,4%</td>
+                <td id="pais">Sérvia (7 114 393)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">11</td>
+                <td id="estado">Goiás</td>
+                <td id="populacao">6 003 788</td>
+                <td id="atual">7 206 589</td>
+                <td id="mudanca">+20.03%</td>
+                <td id="%atual">3,4%</td>
+                <td id="pais">Paraguai (7 003 406)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">12</td>
+                <td id="estado">Maranhão</td>
+                <td id="populacao">6 574 789</td>
+                <td id="atual">7 153 262</td>
+                <td id="mudanca">+8.80%</td>
+                <td id="%atual">3,4%</td>
+                <td id="pais">Paraguai (7 003 406)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">13</td>
+                <td id="estado">Amazonas</td>
+                <td id="populacao">3 514 952</td>
+                <td id="atual">4 269 995</td>
+                <td id="mudanca">+22.56%</td>
+                <td id="%atual">2,0%</td>
+                <td id="pais">Líbano (4 168 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">14</td>
+                <td id="estado">Espírito Santo</td>
+                <td id="populacao">3 514 952</td>
+                <td id="atual">4 108 508</td>
+                <td id="mudanca">+16.89%</td>
+                <td id="%atual">1,9%</td>
+                <td id="pais">Líbano (4 168 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">15</td>
+                <td id="estado">Paraíba</td>
+                <td id="populacao">3 766 528</td>
+                <td id="atual">4 059 905</td>
+                <td id="mudanca">+7.79%</td>
+                <td id="%atual">1,9%</td>
+                <td id="pais">Líbano (4 168 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">16</td>
+                <td id="estado">Mato Grosso</td>
+                <td id="populacao">3 035 122</td>
+                <td id="atual">3 365 351</td>
+                <td id="mudanca">+17.53%</td>
+                <td id="%atual">1,7%</td>
+                <td id="pais">Uruguai (3 415 866)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">17</td>
+                <td id="estado">Rio Grande do Norte</td>
+                <td id="populacao">3 168 027</td>
+                <td id="atual">3 365 351</td>
+                <td id="mudanca">+12.40%</td>
+                <td id="%atual">1,7%</td>
+                <td id="pais">Uruguai (3 415 866)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">18</td>
+                <td id="estado">Alagoas</td>
+                <td id="populacao">3 120 494</td>
+                <td id="atual">3 289 290</td>
+                <td id="mudanca">+7.85%</td>
+                <td id="%atual">1,6%</td>
+                <td id="pais">Uruguai (3 415 866)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">19</td>
+                <td id="estado">Piauí</td>
+                <td id="populacao">3 118 360</td>
+                <td id="atual">3 567 234</td>
+                <td id="mudanca">+5.48%</td>
+                <td id="%atual">1,6%</td>
+                <td id="pais">Kuwait (3 268 431)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">20</td>
+                <td id="estado">Distrito Federal</td>
+                <td id="populacao">2 570 160</td>
+                <td id="atual">3 094 325</td>
+                <td id="mudanca">+20.39%</td>
+                <td id="%atual">1,4%</td>
+                <td id="pais">Kuwait (3 268 431)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">21</td>
+                <td id="estado">Mato Grosso do Sul</td>
+                <td id="populacao">2 449 024</td>
+                <td id="atual">2 839 188</td>
+                <td id="mudanca">+15.93%</td>
+                <td id="%atual">1,3%</td>
+                <td id="pais">Jamaica (2 717 991)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">22</td>
+                <td id="estado">Sergipe</td>
+                <td id="populacao">2 068 017</td>
+                <td id="atual">2 338 474</td>
+                <td id="mudanca">+13.07%</td>
+                <td id="%atual">1,1%</td>
+                <td id="pais">Namíbia (2 280 700)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">23</td>
+                <td id="estado">Rondônia</td>
+                <td id="populacao">1 562 409</td>
+                <td id="atual">1 815 278</td>
+                <td id="mudanca">+16.18%</td>
+                <td id="%atual">0,8%</td>
+                <td id="pais">Gabão (1 725 000)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">24</td>
+                <td id="estado">Tocantins</td>
+                <td id="populacao">1 383 445</td>
+                <td id="atual">1 607 363</td>
+                <td id="mudanca">+16.18%</td>
+                <td id="%atual">0,7%</td>
+                <td id="pais">Bahrein (1 359 800)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">25</td>
+                <td id="estado">Acre</td>
+                <td id="populacao">733 559</td>
+                <td id="atual">906 876</td>
+                <td id="mudanca">+23.63%</td>
+                <td id="%atual">0,4%</td>
+                <td id="pais">Fiji (859 178)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">26</td>
+                <td id="estado">Amapá</td>
+                <td id="populacao">669 526</td>
+                <td id="atual">877 613</td>
+                <td id="mudanca">+31.08%</td>
+                <td id="%atual">0,4%</td>
+                <td id="pais">Fiji (859 178)<br>(Habitantes)</td>
+            </tr>
+            <tr>
+                <td id="posicao">27</td>
+                <td id="estado">Roraima</td>
+                <td id="populacao">450 479</td>
+                <td id="atual">652 713</td>
+                <td id="mudanca">+44.89%</td>
+                <td id="%atual">0,3%</td>
+                <td id="pais">Luxemburgo (562 958)<br>(Habitantes)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+            <tr>
+                <TH colspan="4">Total de Habitantes:</TH>
+                <td colspan="4"><strong>210.147.125<br>(Habitantes)</strong></td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+</body>
+</html>
